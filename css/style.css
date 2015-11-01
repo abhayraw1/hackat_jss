@@ -201,15 +201,7 @@ section.two {
 .work-flow{
     position: relative;
 }
-span.bar-line {
-    display: block;
-    position: absolute;
-    background: #000;
-    height: 80%;
-    width: 1px;
-    top: 9%;
-    right: 50%;
-}
+
 .work-flow h3 {
     text-transform: capitalize;
     font-family: 'Comfortaa';
@@ -661,6 +653,16 @@ ul.copy-rt li a:hover{
     svg#clouds {
         height: 110px;
     }
+
+    span.bar-line {
+    display: block;
+    position: absolute;
+    background: #000;
+    height: 80%;
+    width: 1px;
+    top: 9%;
+    right: 50%;
+}
 }
 @media screen and (max-width:768px){
     svg#clouds {
@@ -710,6 +712,16 @@ ul.copy-rt li a:hover{
     #showLess,#loadMore {
         width: 15%;
     }
+
+    span.bar-line {
+    display: block;
+    position: absolute;
+    background: #000;
+    height: 80%;
+    width: 1px;
+    top: 9%;
+    right: 50%;
+    }
 }
 @media screen and (max-width:640px){
     .menu_box_list ul li {
@@ -753,6 +765,16 @@ ul.copy-rt li a:hover{
     }
     svg#slit {
         height: 65px;
+    }
+
+    span.bar-line {
+    display: block;
+    position: absolute;
+    background: #000;
+    height: 80%;
+    width: 1px;
+    top: 9%;
+    right: 50%;
     }
 }
 @media screen and (max-width: 480px){
@@ -843,6 +865,16 @@ ul.copy-rt li a:hover{
     }
     a.boxclose {
         right: 8em;
+    }
+
+    span.bar-line {
+    display: block;
+    position: absolute;
+    background: #000;
+    height: 80%;
+    width: 1px;
+    top: 9%;
+    right: 50%;
     }
 }
 @media screen and (max-width:320px){
@@ -982,6 +1014,16 @@ ul.copy-rt li a:hover{
     }
     ul.copy-rt li {
         font-size: 12px;
+    }
+
+    span.bar-line {
+    display: block;
+    position: absolute;
+    background: #000;
+    height: 80%;
+    width: 1px;
+    top: 9%;
+    right: 50%;
     }
 }
 
