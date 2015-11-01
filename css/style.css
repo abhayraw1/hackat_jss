@@ -113,7 +113,7 @@ a.boxclose {
     display: block;
     position: absolute;
     top: 2.1em;
-    right: 5em;
+    right: 8em;
 }
 .menu_box_list ul {
     padding: 12px 0px;
@@ -235,7 +235,6 @@ img.re-imaging{
 }
 .ld-mr-txt p {
     border-bottom: 1px solid #000;
-    padding: 0px 50.8px;
     color: #545050;
     font-family: sans-serif;
     font-size: 13px;
@@ -459,6 +458,7 @@ li.inf-hdn{
     fill: #00afde;
     stroke: #00afde;
 }
+
 /*---sports-flow--*/
 .sports-flow {
     text-align: center;
@@ -634,6 +634,23 @@ ul.copy-rt li a:hover{
     background: url(../images/top-arrow.png) no-repeat;
 }
 /*--responsive starts here--*/
+
+
+/*
+@media screen and (min-width:1025px){
+    .schedule-img{
+        margin-left: 20% !important;
+        border: 5px solid whitesmoke;
+        width: 20% !important;
+        margin-bottom: 0px !important;
+             z-index: 10 !important;
+        }
+
+        .schedule-img-r{
+            z-index: !important;
+        margin-left: -20% !important;
+        }
+}*/
 @media screen and (max-width:1024px){
     .position-box-right {
         right: 18%;
@@ -645,10 +662,12 @@ ul.copy-rt li a:hover{
         padding: 0px 36px;
     }
     .ld-mr-txt.lft {
-        right: -3.5%;
+        right: -3.8%;
+        z-index: 1;
     }
     .ld-mr-txt.rt {
-        left: -3.5%;
+        left: -3.8%;
+        z-index: 1;
     }
     svg#clouds {
         height: 110px;
@@ -658,11 +677,24 @@ ul.copy-rt li a:hover{
     display: block;
     position: absolute;
     background: #000;
-    height: 80%;
+    height: 80% !important;
     width: 1px;
-    top: 9%;
+    top: 13.5% !important;
     right: 50%;
-}
+    }
+    
+     .schedule-img{
+    margin-left: 1% !important;
+    border: 5px solid whitesmoke;
+    width: 20% !important;
+    margin-bottom: 0px !important;
+         z-index: 10;
+    }
+
+    .schedule-img-r{
+        z-index: 10;
+    margin-left: -1% !important;
+    }
 }
 @media screen and (max-width:768px){
     svg#clouds {
@@ -717,10 +749,17 @@ ul.copy-rt li a:hover{
     display: block;
     position: absolute;
     background: #000;
-    height: 80%;
+    height: 80% !important;
     width: 1px;
-    top: 9%;
+    top: 13.5% !important;
     right: 50%;
+    }
+    
+    .schedule-img{
+    display: none;
+    }
+
+    .schedule-img-r{display: none;
     }
 }
 @media screen and (max-width:640px){
@@ -771,10 +810,13 @@ ul.copy-rt li a:hover{
     display: block;
     position: absolute;
     background: #000;
-    height: 80%;
+    height: 80% !important;
     width: 1px;
-    top: 9%;
+    top: 23.8% !important;
     right: 50%;
+    }
+    
+    .schedule-img{display: none
     }
 }
 @media screen and (max-width: 480px){
@@ -866,16 +908,18 @@ ul.copy-rt li a:hover{
     a.boxclose {
         right: 8em;
     }
-
+    
     span.bar-line {
     display: block;
     position: absolute;
     background: #000;
-    height: 80%;
+    height: 84% !important;
     width: 1px;
-    top: 9%;
+    top: 19.8% !important;
     right: 50%;
     }
+
+    
 }
 @media screen and (max-width:320px){
     .menu_box_list ul li {
@@ -1020,37 +1064,72 @@ ul.copy-rt li a:hover{
     display: block;
     position: absolute;
     background: #000;
-    height: 80%;
+    height: 84% !important;
     width: 1px;
-    top: 9%;
+    top: 20% !important;
     right: 50%;
     }
 }
 
+span.bar-line {
+    display: block;
+    position: absolute;
+    background: #000;
+    height: 80%;
+    width: 1px;
+    top: 10.5%;
+    right: 50%;
+    }
 
+.schedule-img{
+    position: inherit;
+        margin-left: 20%;
+        border: 5px solid whitesmoke;
+        width: 20% !important;
+        margin-bottom: 0px !important;
+             z-index: 99999 !important;
+        }
+
+        .schedule-img-r{position: inherit;
+            z-index: 99999 !important;
+        margin-left: -20%;
+        }
 
 
 .image-background{
     width:100%;
 }
 
-.schedule-img{
-    margin-left: 16% !important;
-    border: 5px solid whitesmoke;
-    width: 25% !important;
-    margin-bottom: 0px !important;
-}
 
-.schedule-img-r{
-    margin-left: -16% !important;
+.padd{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .rules{
     font-family: Comfortaa;
     list-style: none;
 }
+
+
+
+.faqs{
+    font-family: Comfortaa;
+    list-style: none;
+}
+
+.faqs li:before{
+    content: "\e258 \e258";
+    font-family: 'Glyphicons Halflings';
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 8px;
+    margin-left: -20px;
+    color: #555555;
+}
+
 .rules li:before{
-content: "\2a";
+    content: "\2a";
     font-family: 'Glyphicons Halflings';
     font-size: 12px;
     margin-top: 4px;
